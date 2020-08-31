@@ -225,8 +225,8 @@ public class DailyTimerTask extends TownyTimerTask {
 				if (townyUniverse.getDataSource().hasTown(town.getName())) {
 					if (town.isCapital()
 						|| !town.hasUpkeep()
-						|| town.isRuined()
-						|| (TownySettings.getWarSiegeEnabled() && TownySettings.getWarCommonPeacefulTownsEnabled() && town.isPeaceful())) {
+						|| town.isRuined())
+					{
 						continue;
 					}
 

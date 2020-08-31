@@ -1031,6 +1031,7 @@ public class NationCommand extends BaseCommand implements CommandExecutor {
 
 			if (split[0].equalsIgnoreCase("add")) {
 
+				/*
 				//In Siegewar, if target town is peaceful, can't add military rank
 				if(TownySettings.getWarSiegeEnabled()
 					&& TownySettings.getWarCommonPeacefulTownsEnabled()
@@ -1040,6 +1041,7 @@ public class NationCommand extends BaseCommand implements CommandExecutor {
 					TownyMessaging.sendErrorMsg(player, TownySettings.getLangString("msg_war_siege_cannot_add_nation_military_rank_to_peaceful_resident"));
 					return;
 				}
+				*/
 
 				try {
 					if (target.addNationRank(rank)) {
